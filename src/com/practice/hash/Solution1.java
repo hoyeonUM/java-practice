@@ -1,3 +1,5 @@
+package com.practice.hash;
+
 import java.util.*;
 
 public class Solution1 {
@@ -8,7 +10,7 @@ public class Solution1 {
         return cheat(participant, completion);
     }
 
-    public String firstPractice(String[] participant, String[] completion)
+    private String firstPractice(String[] participant, String[] completion)
     {
         List<String> list =  new ArrayList<>(Arrays.asList(participant));
         for (String s :  completion) {
@@ -20,7 +22,7 @@ public class Solution1 {
         return list.get(0);
     }
 
-    public String secondPractice(String[] participant, String[] completion)
+    private String secondPractice(String[] participant, String[] completion)
     {
         boolean find = false;
         for (int i = 0; i < completion.length ; i++) {
@@ -38,7 +40,7 @@ public class Solution1 {
         return String.join("", participant);
     }
 
-    public String thirdPractice(String[] participant, String[] completion)
+    private String thirdPractice(String[] participant, String[] completion)
     {
         for (String c : completion) {
             boolean find = false;
@@ -58,7 +60,7 @@ public class Solution1 {
         return String.join("", participant);
     }
 
-    public String cheat(String[] participant, String[] completion)
+    private String cheat(String[] participant, String[] completion)
     {
         Arrays.sort(participant);
         Arrays.sort(completion);
