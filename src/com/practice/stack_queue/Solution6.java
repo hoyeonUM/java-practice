@@ -4,10 +4,10 @@ public class Solution6 {
 
     public int[] run(int[] prices) {
         int[] answer = new int[prices.length];
-        for (int currentPrice = 0;  currentPrice < prices.length; currentPrice++) {
-            for (int nextPrice = currentPrice + 1; nextPrice < prices.length; nextPrice++) {
-                if (prices[currentPrice] > prices[nextPrice] || (nextPrice+1 == prices.length)) {
-                    answer[currentPrice] = nextPrice - currentPrice;
+        for (int currentPriceIndex = 0;  currentPriceIndex < prices.length; currentPriceIndex++) {
+            for (int nextPriceIndex = currentPriceIndex + 1; nextPriceIndex < prices.length; nextPriceIndex++) {
+                if (prices[currentPriceIndex] > prices[nextPriceIndex] || (nextPriceIndex+1 == prices.length)) {
+                    answer[currentPriceIndex] = nextPriceIndex - currentPriceIndex;
                     break;
                 }
             }
