@@ -28,7 +28,7 @@ public class Solution3Test {
     public void basicTest3() {
         Solution3 solution = new Solution3();
         int[][] jobs = {{0, 9}, {13, 18}, {12, 17}};
-        assertEquals(19, solution.run(jobs));
+        assertEquals(18, solution.run(jobs));
     }
 
     @Test
@@ -43,6 +43,13 @@ public class Solution3Test {
         Solution3 solution = new Solution3();
         int[][] jobs = {{0, 3}, {7, 10}, {2, 3}};
         assertEquals(5, solution.run(jobs));
+    }
+
+    @Test
+    public void basicTest6() {
+        Solution3 solution = new Solution3();
+        int[][] jobs = {{0, 1}, {0, 3}, {2, 3}};
+        assertEquals(3, solution.run(jobs));
     }
 
 
