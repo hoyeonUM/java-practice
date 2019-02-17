@@ -47,12 +47,12 @@ public class Solution3 {
 
         return result / jobs.length;
     }
-}
-class Job {
-    int startTime, spendTime;
-    public Job(int startTime, int spendTime) {
-        this.startTime = startTime;
-        this.spendTime = spendTime;
+    class Job {
+        int startTime, spendTime;
+        public Job(int startTime, int spendTime) {
+            this.startTime = startTime;
+            this.spendTime = spendTime;
+        }
     }
 }
 
